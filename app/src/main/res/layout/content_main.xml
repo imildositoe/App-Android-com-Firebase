@@ -14,23 +14,66 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_weight="0"
+        android:textColor="@android:color/background_dark"
         android:text="Teste com Firebase" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.06"
+        android:layout_weight="0"
         android:ems="10"
+        android:hint="Digite o nome"
         android:inputType="textPersonName"
-        android:text="Name" />
+        />
 
-    <TextView
-        android:id="@+id/textView3"
+    <EditText
+        android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_weight="0.11" />
+        android:layout_weight="0"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:inputType="number" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="Auto complete TextView" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:hint="Multi Auto complete" />
+
+    <StackView
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="591dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.37"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Click here!" />
 
 </LinearLayout>
